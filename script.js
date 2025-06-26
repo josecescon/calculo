@@ -33,9 +33,12 @@ function maior_numero(){
     let numero1 = parseFloat (document.getElementById('numero1').value);
     let numero2 = parseFloat(document.getElementById('numero2').value);
     if(numero1 > numero2){
-        document.getElementById('resultado5').textContent = 'O maior número é ' + numero1
+        document.getElementById('resultado5').textContent = 'O maior número é ' + numero1;
     }
     if(numero1 < numero2){
-        document.getElementById('resultado5').textContent = 'O maior número é ' + numero2
+        document.getElementById('resultado5').textContent = 'O maior número é ' + numero2;
+    }
+    if(numero1 == numero2){
+        document.getElementById('resultado5').textContent = 'São iguais';
     }
 }
